@@ -1,78 +1,53 @@
-🎬 Dashboard Interativo de Filmes
-Análise de popularidade, avaliações e tendências do cinema usando dados da TMDB
+# 🎬 Dashboard Interativo de Filmes
+**Análise de popularidade, avaliações e tendências do cinema utilizando dados da API TMDB**
 
-📌 Sobre o Projeto
-Este projeto apresenta um dashboard interativo desenvolvido em Python com Streamlit, que permite analisar dados sobre filmes populares, suas avaliações, popularidade, ano de lançamento e outros indicadores relevantes.
-Utilizando dados fornecidos pela API pública TMDB (The Movie Database), o dashboard demonstra como técnicas básicas de Ciência de Dados podem ser aplicadas para coletar, armazenar, tratar e visualizar informações, possibilitando insights sobre o comportamento da indústria cinematográfica e preferências do público.
+## 📌 Sobre o Projeto
+Este projeto apresenta um **dashboard interativo desenvolvido em Python com Streamlit**, que permite analisar dados sobre filmes populares, suas avaliações, popularidade, ano de lançamento e outros indicadores relevantes.
 
-👥 Público-Alvo
-O dashboard foi desenvolvido para entusiastas de cinema, estudantes, críticos e curiosos que desejam explorar informações sobre filmes, entender tendências de popularidade e identificar relações entre o ano de lançamento, notas e gêneros mais consumidos pelo público.
+Utilizando dados fornecidos pela **API pública TMDB (The Movie Database)**, o dashboard demonstra como técnicas básicas de Ciência de Dados podem ser aplicadas para coletar, armazenar, tratar e visualizar informações, possibilitando **insights sobre o comportamento da indústria cinematográfica** e as preferências do público.
 
-🎯 Objetivo Geral
-Explorar o universo cinematográfico por meio de dados públicos, respondendo perguntas que auxiliem na identificação de tendências, padrões e insights relevantes sobre a produção e consumo de filmes.
+## 👥 Público-Alvo
+Projetado para:
 
-❓ Perguntas-Chave Respondidas pelo Dashboard
-O projeto se propõe a responder:
-Quais gêneros cinematográficos são mais populares atualmente e como essa popularidade evoluiu ao longo dos anos?
+- 🎞️ Entusiastas de cinema  
+- 🎓 Estudantes de Tecnologia e Ciência de Dados  
+- 📝 Críticos e criadores de conteúdo  
+- 🔍 Curiosos que desejam explorar dados sobre filmes
 
+## 🎯 Objetivo Geral
+Explorar o universo cinematográfico por meio de dados públicos, respondendo perguntas que auxiliem na identificação de **tendências, padrões e insights relevantes** sobre a produção e consumo de filmes.
 
-Quais filmes apresentam as melhores avaliações do público e quais fatores estão associados a essas notas?
+## ❓ Perguntas-Chave Respondidas pelo Dashboard
 
+- 🎭 Quais gêneros são mais populares atualmente e como essa popularidade evoluiu ao longo dos anos?  
+- ⭐ Quais filmes apresentam as melhores avaliações do público e o que influencia essas notas?  
+- 📅 Existe relação entre o ano de lançamento e a popularidade, nota média ou quantidade de produções lançadas?  
+- 🎬 Quais atores ou diretores aparecem com maior frequência entre filmes bem avaliados?  
+- 🍿 Qual a distribuição de filmes por gênero e quais predominam entre os mais bem avaliados?
 
-Existe relação entre o ano de lançamento de um filme e sua popularidade, nota média ou quantidade de produções?
+## 🛠️ Tecnologias Utilizadas
 
+| Tecnologia  | Uso |
+|-------------|-----|
+| **Python**   | Linguagem base do projeto |
+| **TMDB API** | Coleta de dados públicos |
+| **Pandas**   | Limpeza e manipulação dos dados |
+| **Requests** | Consumo da API |
+| **Streamlit**| Criação do dashboard interativo |
+| **Plotly**   | Visualização de dados e gráficos |
+| **CSV**      | Armazenamento local dos dados tratados |
 
-Quais atores ou diretores aparecem com maior frequência em filmes bem avaliados?
+## 🔗 Fonte dos Dados
 
+- **Plataforma:** *The Movie Database (TMDB)*  
+- **Endpoint utilizado:** `/movie/popular`  
+- **Acesso:** Gratuito mediante chave de API  
 
-Qual a distribuição de filmes por gênero e quais predominam entre os mais bem avaliados?
+**Dados coletados:**  
+Título • Popularidade • Nota média • Número de votos • Data de lançamento • Descrição
 
+## 📂 Estrutura do Projeto
 
-
-🛠️ Tecnologias Utilizadas
-Tecnologia
-Uso
-Python
-Linguagem base
-TMDB API
-Coleta de dados públicos
-Pandas
-Limpeza, manipulação e armazenamento dos dados
-Requests
-Consumo da API
-Streamlit
-Criação da interface interativa
-Plotly
-Visualização dos dados (gráficos interativos)
-CSV
-Armazenamento dos dados processados
-
-
-🔗 Fonte dos Dados
-API utilizada: The Movie Database (TMDB)
- Acesso gratuito mediante criação de chave na plataforma.
-Endpoint utilizado: /movie/popular
-Dados coletados:
-Título
-
-
-Popularidade
-
-
-Nota do público
-
-
-Número de votos
-
-
-Data de lançamento
-
-
-Descrição
-
-
-
-📂 Estrutura do Projeto
 /dashboard-filmes
 │ app.py                 # Dashboard Streamlit
 │ coleta.py              # Coleta e armazenamento dos dados
@@ -96,23 +71,27 @@ O navegador abrirá automaticamente exibindo o dashboard.
 
 📊 Recursos do Dashboard
 ✔️ KPIs de destaque
- ✔️ Filtro interativo por Ano
- ✔️ Filtro interativo por Nota mínima
- ✔️ Listagem de filmes filtrados
- ✔️ Gráfico Top 10 filmes mais populares
- ✔️ Gráfico Distribuição de notas por ano
- ✔️ Gráfico Média das notas por ano
+✔️ Filtro interativo por Ano
+✔️ Filtro por Nota mínima
+✔️ Listagem dinâmica de filmes filtrados
+✔️ Top 10 filmes mais populares
+✔️ Distribuição das notas por ano
+✔️ Média das notas por ano
 
 📌 Insights Obtidos
-A média das notas ao longo dos anos possibilita identificar períodos com maior aprovação do público.
+🔸 A média das notas ao longo dos anos indica períodos com maior aprovação do público.
 
+🔸 Popularidade não significa qualidade: filmes muito populares nem sempre têm as melhores notas.
 
-Popularidade e avaliação não são necessariamente relacionadas: filmes muito populares podem não ter as melhores notas.
+🔸 Os filtros permitem identificar rapidamente filmes de destaque conforme critérios personalizados.
 
+### 📸 Capturas de Tela do Dashboard
 
-Os filtros permitem identificar rapidamente filmes de destaque, conforme critérios personalizados do usuário.
+**[Inserir Captura de Tela 1: Visão Geral e KPIs]**
+*Descrição: Tela inicial do dashboard mostrando os principais indicadores de popularidade e a distribuição geral de filmes.*
 
-
+**[Inserir Captura de Tela 2: Interatividade e Gráfico de Gêneros]**
+*Descrição: Demonstração da interatividade com o filtro de Nota Mínima, e o gráfico da evolução de Popularidade por Gênero.*
 
 📅 Entrega Final
 Este repositório atende a todos os requisitos do projeto:
