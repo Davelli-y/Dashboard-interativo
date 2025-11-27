@@ -1,10 +1,14 @@
 # 🎬 Dashboard Interativo de Filmes
 **Análise de popularidade, avaliações e tendências do cinema utilizando dados da API TMDB**
 
+---
+
 ## 📌 Sobre o Projeto
-Este projeto apresenta um **dashboard interativo desenvolvido em Python com Streamlit**, que permite analisar dados sobre filmes populares, suas avaliações, popularidade, ano de lançamento e outros indicadores relevantes.
+Este projeto apresenta um **dashboard interativo desenvolvido em Python com Streamlit** que permite analisar dados sobre filmes populares, suas avaliações, popularidade, ano de lançamento e outros indicadores relevantes.
 
 Utilizando dados fornecidos pela **API pública TMDB (The Movie Database)**, o dashboard demonstra como técnicas básicas de Ciência de Dados podem ser aplicadas para coletar, armazenar, tratar e visualizar informações, possibilitando **insights sobre o comportamento da indústria cinematográfica** e as preferências do público.
+
+---
 
 ## 👥 Público-Alvo
 Projetado para:
@@ -14,8 +18,12 @@ Projetado para:
 - 📝 Críticos e criadores de conteúdo  
 - 🔍 Curiosos que desejam explorar dados sobre filmes
 
+---
+
 ## 🎯 Objetivo Geral
 Explorar o universo cinematográfico por meio de dados públicos, respondendo perguntas que auxiliem na identificação de **tendências, padrões e insights relevantes** sobre a produção e consumo de filmes.
+
+---
 
 ## ❓ Perguntas-Chave Respondidas pelo Dashboard
 
@@ -25,48 +33,67 @@ Explorar o universo cinematográfico por meio de dados públicos, respondendo pe
 - 🎬 Quais atores ou diretores aparecem com maior frequência entre filmes bem avaliados?  
 - 🍿 Qual a distribuição de filmes por gênero e quais predominam entre os mais bem avaliados?
 
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 | Tecnologia  | Uso |
 |-------------|-----|
-| **Python**   | Linguagem base do projeto |
-| **TMDB API** | Coleta de dados públicos |
-| **Pandas**   | Limpeza e manipulação dos dados |
-| **Requests** | Consumo da API |
-| **Streamlit**| Criação do dashboard interativo |
-| **Plotly**   | Visualização de dados e gráficos |
-| **CSV**      | Armazenamento local dos dados tratados |
+| Python      | Linguagem base do projeto |
+| TMDB API    | Coleta de dados públicos |
+| Pandas      | Limpeza e manipulação dos dados |
+| Requests    | Consumo da API |
+| Streamlit   | Criação do dashboard interativo |
+| Plotly      | Visualização de dados e gráficos |
+| CSV         | Armazenamento local dos dados tratados |
+
+---
 
 ## 🔗 Fonte dos Dados
+**Plataforma:** The Movie Database (TMDB)  
+**Endpoint utilizado:** `/movie/popular`  
+**Acesso:** Gratuito mediante chave de API  
 
-- **Plataforma:** *The Movie Database (TMDB)*  
-- **Endpoint utilizado:** `/movie/popular`  
-- **Acesso:** Gratuito mediante chave de API  
-
-**Dados coletados:**  
+**Dados coletados incluem:**  
 Título • Popularidade • Nota média • Número de votos • Data de lançamento • Descrição
+
+---
 
 ## 📂 Estrutura do Projeto
 
-/dashboard-filmes
-│ app.py                 # Dashboard Streamlit
-│ coleta.py              # Coleta e armazenamento dos dados
-│ requirements.txt       # Dependências do projeto
-│ README.md              # Documentação
+dashboard-filmes
+│ app.py # Dashboard Streamlit
+│ coleta.py # Coleta e armazenamento dos dados
+│ requirements.txt # Dependências do projeto
+│ README.md # Documentação
 │ data/
-│   filmes.csv           # Dados coletados da API TMDB
+│ filmes.csv # Dados coletados da API TMDB
 
+yaml
+Copiar código
 
-▶️ Como Executar o Projeto
-1️⃣ Instale as dependências
+---
+
+## ▶️ Como Executar o Projeto
+
+### 📥 1) Clonar o repositório
+```bash
+git clone https://github.com/usuario/dashboard-filmes.git
+cd dashboard-filmes
+Substitua o link acima pelo link real do seu repositório.
+
+📦 2) Instalar as dependências
+bash
+Copiar código
 pip install -r requirements.txt
-
-2️⃣ Gere o arquivo CSV dos filmes
+🎬 3) Coletar os dados
+bash
+Copiar código
 python coleta.py
-
-3️⃣ Inicie o dashboard
+🚀 4) Executar o dashboard
+bash
+Copiar código
 streamlit run app.py
-
 O navegador abrirá automaticamente exibindo o dashboard.
 
 📊 Recursos do Dashboard
@@ -81,30 +108,32 @@ O navegador abrirá automaticamente exibindo o dashboard.
 📌 Insights Obtidos
 🔸 A média das notas ao longo dos anos indica períodos com maior aprovação do público.
 
-🔸 Popularidade não significa qualidade: filmes muito populares nem sempre têm as melhores notas.
+🔸 Popularidade não significa qualidade: filmes muito populares nem sempre possuem ótimas avaliações.
 
 🔸 Os filtros permitem identificar rapidamente filmes de destaque conforme critérios personalizados.
 
-### 📸 Capturas de Tela do Dashboard
+📸 Capturas de Tela do Dashboard
 
-**[Inserir Captura de Tela 1: Visão Geral e KPIs]**
-*Descrição: Tela inicial do dashboard mostrando os principais indicadores de popularidade e a distribuição geral de filmes.*
+1️⃣ Visão Geral e KPIs
 
-**[Inserir Captura de Tela 2: Interatividade e Gráfico de Gêneros]**
-*Descrição: Demonstração da interatividade com o filtro de Nota Mínima, e o gráfico da evolução de Popularidade por Gênero.*
+Tela inicial com métricas principais de popularidade e desempenho dos filmes.
+
+2️⃣ Gráfico de Popularidade por Gênero
+
+Demonstração de filtros interativos e comparação entre gêneros.
 
 📅 Entrega Final
 Este repositório atende a todos os requisitos do projeto:
+
 ✔️ Uso de API pública
- ✔️ Armazenamento e tratamento local dos dados
- ✔️ Dashboard Interativo com Streamlit
- ✔️ Visualizações e KPIs
- ✔️ Documentação completa
+✔️ Armazenamento e tratamento local dos dados
+✔️ Dashboard Interativo com Streamlit
+✔️ Visualizações e KPIs
+✔️ Documentação completa
 
 👤 Integrantes do Grupo
 Guilherme Henrique Yamaguchi Davelli
+
 Alexandre Oliveira
+
 Daniel Lopes
-
-
-
