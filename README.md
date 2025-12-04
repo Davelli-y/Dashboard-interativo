@@ -61,15 +61,16 @@ Título • Popularidade • Nota média • Número de votos • Data de lança
 
 ## 📂 Estrutura do Projeto
 
-dashboard-filmes/
-│
-├── app.py               # Dashboard desenvolvido em Streamlit
-├── coleta.py            # Coleta e armazenamento dos dados da API TMDB
-├── requirements.txt     # Dependências do projeto
-├── README.md            # Documentação do projeto
-│
-└── data/
-    └── filmes.csv       # Dados coletados da API TMDB
+| Caminho / Arquivo      | Descrição                                              |
+| ---------------------- | ------------------------------------------------------ |
+| `dashboard-filmes/`    | Pasta raiz do projeto                                  |
+| ├── `app.py`           | Dashboard desenvolvido em Streamlit                    |
+| ├── `coleta.py`        | Script de coleta e armazenamento dos dados da API TMDB |
+| ├── `requirements.txt` | Lista de dependências necessárias para rodar o projeto |
+| ├── `README.md`        | Documentação completa do projeto                       |
+| └── `data/`            | Pasta de armazenamento dos dados processados           |
+|     └── `filmes.csv`   | Arquivo com os dados coletados da API TMDB             |
+
 
 
 ---
@@ -79,15 +80,18 @@ dashboard-filmes/
 ### 📥 1) Clonar o repositório
 
 git clone https://github.com/davelli-y/dashboard-interativo.git
+
 cd dashboard-interativo
 
 
 📦 2) Instalar as dependências
 
 pip install -r requirements.txt
+
 🎬 3) Coletar os dados
 
 python coleta.py
+
 🚀 4) Executar o dashboard
 
 streamlit run app.py
