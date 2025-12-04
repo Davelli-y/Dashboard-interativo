@@ -61,38 +61,35 @@ Título • Popularidade • Nota média • Número de votos • Data de lança
 
 ## 📂 Estrutura do Projeto
 
-dashboard-filmes
-│ app.py # Dashboard Streamlit
-│ coleta.py # Coleta e armazenamento dos dados
-│ requirements.txt # Dependências do projeto
-│ README.md # Documentação
-│ data/
-│ filmes.csv # Dados coletados da API TMDB
+dashboard-filmes/
+│
+├── app.py               # Dashboard desenvolvido em Streamlit
+├── coleta.py            # Coleta e armazenamento dos dados da API TMDB
+├── requirements.txt     # Dependências do projeto
+├── README.md            # Documentação do projeto
+│
+└── data/
+    └── filmes.csv       # Dados coletados da API TMDB
 
-yaml
-Copiar código
 
 ---
 
 ## ▶️ Como Executar o Projeto
 
 ### 📥 1) Clonar o repositório
-```bash
-git clone https://github.com/usuario/dashboard-filmes.git
-cd dashboard-filmes
-Substitua o link acima pelo link real do seu repositório.
+
+git clone https://github.com/davelli-y/dashboard-interativo.git
+cd dashboard-interativo
+
 
 📦 2) Instalar as dependências
-bash
-Copiar código
+
 pip install -r requirements.txt
 🎬 3) Coletar os dados
-bash
-Copiar código
+
 python coleta.py
 🚀 4) Executar o dashboard
-bash
-Copiar código
+
 streamlit run app.py
 O navegador abrirá automaticamente exibindo o dashboard.
 
@@ -114,13 +111,26 @@ O navegador abrirá automaticamente exibindo o dashboard.
 
 📸 Capturas de Tela do Dashboard
 
-1️⃣ Visão Geral e KPIs
+1️⃣ Visão Geral
 
 Tela inicial com métricas principais de popularidade e desempenho dos filmes.
 
-2️⃣ Gráfico de Popularidade por Gênero
+![3](https://github.com/user-attachments/assets/630ff506-1395-4de2-bd18-6e95569a9f47)
 
-Demonstração de filtros interativos e comparação entre gêneros.
+![4](https://github.com/user-attachments/assets/36949138-357a-45b3-93fb-66217bec0c98)
+
+![5](https://github.com/user-attachments/assets/7e4cf545-b5df-4cc1-b95c-8b4645b31e20)
+
+![6](https://github.com/user-attachments/assets/1b2534e8-eb47-423f-bb5a-5ab9b264536a)
+
+2️⃣ Gráfico de Popularidade 
+
+Demonstração de filtros interativos 
+
+![1](https://github.com/user-attachments/assets/ffe726bf-09d6-4952-a4f3-076f5a1c00c8)
+
+![2](https://github.com/user-attachments/assets/9e6a8a57-2303-4ab7-bdbe-ff6eaa228421)
+
 
 📅 Entrega Final
 Este repositório atende a todos os requisitos do projeto:
@@ -134,6 +144,6 @@ Este repositório atende a todos os requisitos do projeto:
 👤 Integrantes do Grupo
 Guilherme Henrique Yamaguchi Davelli
 
-Alexandre Oliveira
+Alexandre Anzolin de Oliveira
 
-Daniel Lopes
+Daniel Lopes da Silva
