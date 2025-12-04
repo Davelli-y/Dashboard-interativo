@@ -84,20 +84,22 @@ git clone https://github.com/davelli-y/dashboard-interativo.git
 cd dashboard-interativo
 
 
-📦 2) Instalar as dependências
+###📦 2) Instalar as dependências
 
 pip install -r requirements.txt
 
-🎬 3) Coletar os dados
+### 🎬 3) Coletar os dados
 
 python coleta.py
 
-🚀 4) Executar o dashboard
+### 🚀 4) Executar o dashboard
 
 streamlit run app.py
+
 O navegador abrirá automaticamente exibindo o dashboard.
 
-📊 Recursos do Dashboard
+## 📊 Recursos do Dashboard
+
 ✔️ KPIs de destaque
 ✔️ Filtro interativo por Ano
 ✔️ Filtro por Nota mínima
@@ -106,18 +108,17 @@ O navegador abrirá automaticamente exibindo o dashboard.
 ✔️ Distribuição das notas por ano
 ✔️ Média das notas por ano
 
-📌 Insights Obtidos
+## 📌 Insights Obtidos
+
 🔸 A média das notas ao longo dos anos indica períodos com maior aprovação do público.
 
 🔸 Popularidade não significa qualidade: filmes muito populares nem sempre possuem ótimas avaliações.
 
 🔸 Os filtros permitem identificar rapidamente filmes de destaque conforme critérios personalizados.
 
-📸 Capturas de Tela do Dashboard
+## 📸 Capturas de Tela do Dashboard
 
-1️⃣ Visão Geral
-
-Tela inicial com métricas principais de popularidade e desempenho dos filmes.
+### 1️⃣ Visão Geral
 
 ![3](https://github.com/user-attachments/assets/630ff506-1395-4de2-bd18-6e95569a9f47)
 
@@ -127,7 +128,7 @@ Tela inicial com métricas principais de popularidade e desempenho dos filmes.
 
 ![6](https://github.com/user-attachments/assets/1b2534e8-eb47-423f-bb5a-5ab9b264536a)
 
-2️⃣ Gráfico de Popularidade 
+## 2️⃣ Gráfico de Popularidade 
 
 Demonstração de filtros interativos 
 
@@ -136,7 +137,7 @@ Demonstração de filtros interativos
 ![2](https://github.com/user-attachments/assets/9e6a8a57-2303-4ab7-bdbe-ff6eaa228421)
 
 
-📅 Entrega Final
+## 📅 Entrega Final
 Este repositório atende a todos os requisitos do projeto:
 
 ✔️ Uso de API pública
@@ -145,7 +146,8 @@ Este repositório atende a todos os requisitos do projeto:
 ✔️ Visualizações e KPIs
 ✔️ Documentação completa
 
-👤 Integrantes do Grupo
+## 👤 Integrantes do Grupo
+
 Guilherme Henrique Yamaguchi Davelli
 
 Alexandre Anzolin de Oliveira
